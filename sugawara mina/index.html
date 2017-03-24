@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>LOVES BREAD!</title>
+	<link rel="shortcut icon" href="img/breadicon.gif">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+function slideSwitch() {
+   var $active = $('#slideshow img.active');
+
+   if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+   var $next =  $active.next().length ? $active.next()
+      : $('#slideshow img:first');
+
+   $active.addClass('last-active');
+
+   $next.css({opacity: 0.0})
+      .addClass('active')
+      .animate({opacity: 1.0}, 1000, function() {
+           $active.removeClass('active last-active');
+      });
+}
+
+$(function() {
+   setInterval( "slideSwitch()", 3000 );
+});
+	</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script>
+$(function(){
+      $('a[href^=#]').click(function() {
+      var speed = 400; 
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+     
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+</head>
+<body>
+<!-- header -->
+<header class="header">
+	<nav class="header-navi">
+		<ul class="header-navi-list clearfix">
+			<li class="header-navi-list-item">
+				<a href="index.html">HOME</a>
+			</li>
+			<li class="header-navi-list-item">
+				<a href="recommend.html">RECOMMEND</a>
+			</li>
+			<li class="header-navi-list-item">
+				<a href="eat.html">HOW TO EAT</a>
+			</li>
+			<li class="header-navi-list-item">
+				<a href="world.html">WORLD BREAD</a>
+			</li>
+			<li class="header-navi-list-item">
+				<a href="more.html">MORE</a>
+			</li>
+			<li class="header-navi-list-item">
+				<a href="contact.html">CONTACT</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<!-- main -->
+<div id="slideshow">
+   <img class="active" src="img/topimage1.jpg" alt="画像1">
+   <img src="img/topimage2.jpg" alt="画像2">
+   <img src="img/topimage3.jpeg" alt="画像3">
+   <img src="img/topimage4.jpg" alt="画像4">
+   <img src="img/topimage5.jpeg" alt="画像5">
+</div>
+<div id="about"></div>
+<div class="about-text">
+<h3>What's LOVES BREAD?</h3>
+<p class="text">
+<br>突然ですが、みなさん、パンはお好きですか？<br>
+わたしはパンに限らず、パンもケーキもマフィンもケーキもホワイトソースもうどんも・・・<br>
+小麦製品が大！大！大！大好きです。<br>
+そして何より、パン屋さんやケーキ屋さんの雰囲気や、あのとーってもいいにおいがたまらなく大好きなのです。<br>
+子供が産まれてから、子供のごはんの心配をしなくてはいけないので夫や友人におでかけに誘ってもらっても<br>レトルトやお弁当の用意をして、飲み物持って、ほかにもたくさん荷物があって・・・おでかけのハードルがかなり高くなってしまいました。<br>
+ですが娘ももう1歳5か月。離乳食中期からパンをあげはじめて、すっかりパンが大好きに！<br>
+（パン屋さんの前を通ると『パンパン！ちょーだい』と言います・・・）<br>
+そうなるとおでかけのハードルが少し下がって、レトルトやお弁当を持参しなくても、<br>パン屋さんに寄ってパン買えばいっか～とおでかけが楽しくなり、近頃はでかけた先でのパン屋さんめぐりも楽しみのひとつになりました。<br>
+そして子供が食べると思うとほんのすこしだけ、成分とかが気になるようになり・・・<br>
+時間があれば、パンやおやつを手作りするようになりました。<br>
+このサイトは、そんなわたしの子育てにも欠かせないおいしいパンを紹介するサイトです。<br>
+本当は都内全域や旅先でのおすすめパン屋さんをご紹介したいのですが、今回は杉並区近郊のおすすめパン屋さん、<br>
+他にはパンのおいしい食べ方、世界のパン、おまけにおいしい焼き菓子屋さんなどもおすすめしちゃいます。<br><br></p>
+<p class="enjoy">Let's Enjoy!</p><br>
+</div>
+
+<div class="link clearfix">
+<div class="main-link1">
+	<div class="RECOMMEND">
+	<a class="link1" href="recommend.html">RECOMMEND</a>
+	</div>
+	<div class="HOWTOEAT"><a class="link2" href="eat.html">HOW TO EAT</a></div>
+</div>
+<div class="main-link2">
+	<div class="WORLD"><a class="link3" href="world.html">WORLD BREAD</a></div>
+	<div class="more"><a class="link4" href="more.html">MORE</a></div>
+</div>
+</div>
+<footer>
+<div class="footer-sns">
+		<a href="https://www.facebook.com/sato.mina1">
+		<img class="facebook" src="img/facebook.png">
+		</a>
+		<a href="https://www.instagram.com/minasgwr/?hl=ja">
+		<img class="instagram" src="img/Instagram.png">
+		</a>
+		<div class="footer">
+		<div class="footer-logo">&copy;2017 LOVES BREAD!</div>
+	</div>
+
+</footer>
+
+</body>
+
+</html>
