@@ -513,17 +513,13 @@ textarea{
 
 @media all and (max-width: 1024px){
 
-	
+/*index*/	
 	.header{
-		font-size: 5px;
-		/*display: flex;
-		flex-wrap: wrap;*/
-		width: 100%;
+		font-size: 10px;
+		max-width: 100%;
+		height: 60px;
 	}
-	/*.header-list-item{
-		float: none;
-	}
-*/
+
 	#slideshow img{
 		width: 100%;
 		height: auto;
@@ -532,218 +528,90 @@ textarea{
 		width: 100%;
 		height: auto;
 	}
+
+	.about-text{
+		width: 100%;
+		font-size: 15px;
+	}
 	
 	.link{
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 	}
 
 	.link1 {
-		margin: 150px auto ;
+		margin: 230px auto ;
 	}
 
 	.link2{
-		margin: 150px auto;
+		margin: 230px auto;
 	}
 
 	.link3{
-		margin: 150px auto;
+		margin: 230px auto;
 	}
 
 	.link4{
-		margin: 150px auto;
+		margin: 230px auto;
 	}
 
-	.about-text{
-		width: 100%;
-		font-size: 10px;
-	}
-	
 	.RECOMMEND{
-		/*float: left;*/
-		width: 300px;
-		height: 200px;
+		width: 500px;
+		height: 300px;
 		margin: 5px;
 	}
 
 	.HOWTOEAT{
-		/*float: right;*/
-		width: 300px;
-		height: 200px;
+		width: 500px;
+		height: 300px;
 		margin: 5px;
 	}
 	.WORLD{
-		/*float: left;*/
-		width: 300px;
-		height: 200px;
+		width: 500px;
+		height: 300px;
 		margin: 5px;
 	}
 	.more{
-		/*float: right;*/
-		width: 300px;
-		height: 200px;
+		width: 500px;
+		height: 300px;
 		margin: 5px;
 	}
 
 	.main-link1{
-		width: 610px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 10px;
+		width: 1020px;
+		height: 305px;
+		margin: 10px auto;
 	}	
 	.main-link2{
-		width: 610px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 10px;
+		width: 1020px;
+		height: 305px;
+		margin: 10px auto;
 	}	
+/*recommend*/
+	.recommend-image > img{
+		width:100%;
+		height: auto;
+	}
+/*howtoeat*/
+	.eat-image > img{
+		width:100%;
+		height: auto;
+	}
+/*worldbread*/
+	.world-image > img{
+		width:100%;
+		height: auto;
+	}
+/*more*/
+	.more-image > img{
+		width:100%;
+		height: auto;
+	}
+/*contact*/
+	.contact-image > img{
+		width:100%;
+		height: auto;
+	}
 }
 
 /*smartphone*/
-@media all and (max-width: 768px){
-
-	
-
-	.header{
-		font-size: 11px;
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-	}
-	.header-list-item{
-		float: none;
-	}
-
-	#slideshow img{
-		width: 100%;
-		height: auto;
-	}
-	.photo{
-		width: 100%;
-		height: auto;
-	}
-
-	.link{
-		width: 90%;
-		margin: 0 auto;
-	}
-
-	.link1 {
-		margin: 150px auto ;
-	}
-
-	.link2{
-		margin: 150px auto;
-	}
-
-	.link3{
-		margin: 150px auto;
-	}
-
-	.link4{
-		margin: 150px auto;
-	}
-
-	.about-text{
-		width: 100%;
-		font-size: 10px;
-	}
-	
-	.RECOMMEND{
-		width: 300px;
-		height: 200px;
-		margin: 5px;
-	}
-
-	.HOWTOEAT{
-		width: 300px;
-		height: 200px;
-		margin: 5px;
-	}
-	.WORLD{
-		width: 300px;
-		height: 200px;
-		margin: 5px;
-	}
-	.more{
-		width: 300px;
-		height: 200px;
-		margin: 5px;
-	}
-
-	.main-link1{
-		width: 610px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 10px;
-	}	
-	.main-link2{
-		width: 610px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 10px;
-	}	
-}
-
-/*@media all and (max-width: 1000px){
-	.header{
-		font-size: 5px;
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-	}
-	.header-list-item{
-		float: none;
-	}
-
-	/*#slideshow img{
-		max-width: 100%;
-		height: auto;
-
-	}*/
-/*
-	.about-text{
-		width: 100%;
-		font-size: 10px;
-	}
-	
-	.RECOMMEND{
-		width: 300px;
-		height: 200px;
-		margin: 5px;
-	}
-	.HOWTOEAT{
-		width: 300px;
-		height: 200px;
-		margin: 5px;
-	}
-	.WORLD{
-		width: 300px;
-		height: 200px;
-		margin: 5px;
-	}
-	.more{
-		width: 300px;
-		height: 200px;
-		margin: 5px;
-	}
-
-	.main-link1{
-		width: 610px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 10px;
-	}	
-	.main-link2{
-		width: 610px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 10px;
-	}	
-}*/*/
