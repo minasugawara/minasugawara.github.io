@@ -15,12 +15,8 @@
 }
 .header-navi{
 	width: 100%;
-	border-bottom: thin solid #000;
 	position: fixed;	
 	z-index: 99;
-	background-color: white;
-	height: 60px;
-	opacity: 0.9;
 }
 .header-navi-list{
 	display: flex;
@@ -28,12 +24,16 @@
 	justify-content: space-around;
 	width: 100%;
 	margin: 0 auto;
- }
+	border-bottom: thin solid #000;
+}
 .header-navi-list-item{
 	display: flex;
 	float: left;
 	font-family: Georgia;
 	flex-grow: 1;
+	background-color: white;
+	height: 60px;
+	opacity: 0.9;
 }
 .header-navi-list-item + .header-navi-list-item{
 	border-left: 1px solid #000;
@@ -229,8 +229,9 @@
 	border-bottom: medium dotted black;
 }
 .ggmap1{
-	width: 600px;
-	margin: 10px auto;
+	width: 100%;
+	height: auto;
+	text-align: center;
 }
 .shigekuniya img{
 	width: 300px;
@@ -622,13 +623,24 @@ textarea{
 @media all and (max-width: 768px){
 /*index*/
 	.header{
-		font-size: 10px;
+		font-size: 6px;
 		max-width: 100%;
-		height: 60px;
+		height: auto;
 	}
 
 	.header-navi{
 		height: 51px;
+	}
+
+	.header-navi-list{
+		display: flex;
+		flex-wrap: wrap;
+	 	border-bottom: none;
+	}
+
+	.header-navi-list-item{
+		border-bottom: thin solid #000;
+		height: 40px;
 	}
 
 	#slideshow img{
@@ -640,9 +652,94 @@ textarea{
 		height: auto;
 	}
 
-	.about-text{
+	.about-text > h3{
+		text-align: left;
+	}
+
+	.text{
 		width: 100%;
-		font-size: 15px;
+		font-size: 12px;
+		text-align: left;
+		word-wrap: break-word;
 	}
 	
+	.link{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.link1 {
+		margin: 150px auto ;
+	}
+
+	.link2{
+		margin: 150px auto;
+	}
+
+	.link3{
+		margin: 150px auto;
+	}
+
+	.link4{
+		margin: 150px auto;
+	}
+
+	.RECOMMEND{
+		width: 100%;
+		height: auto;
+	}
+
+	.HOWTOEAT{
+		width: 100%;
+		height: auto;
+	}
+	.WORLD{
+		width: 100%;
+		height: auto;
+	}
+	.more{
+		width: 100%;
+		height: auto;
+	}
+
+	.main-link1{
+		width: 100%;
+		height: auto;
+		margin: 10px;
+	/*	display: table-cell;
+		vertical-align: middle;*/
+	}	
+	.main-link2{
+		width: 100%;
+		height: auto;
+		margin: 10px;
+	/*	display: table-cell;
+		vertical-align: middle;*/
+	}
+
+	.footer-logo{
+		font-size: 10px;
+	}
+
+/*recommend*/
+	.recommend-text{
+		font-size: 10px;
+	}
+/*howtoeat*/
+	.eat-text{
+		font-size: 10px;
+	}
+/*more*/
+	.more-txt{
+		font-size: 10px;
+	}
+/*contact*/
+	.contact-form > h3{
+		font-size: 15px;
+	}
+
+	textarea{
+		width: 300px;
+		height: 100px;
 }
