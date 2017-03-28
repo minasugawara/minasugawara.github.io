@@ -5,7 +5,9 @@
 	<title>LOVES BREAD!</title>
 	<link rel="shortcut icon" href="img/breadicon.gif">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/skippr.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 </head>
 <body>
 <!-- header -->
@@ -34,16 +36,18 @@
 	</nav>
 </header>
 <!-- main -->
-<div id="slideshow">
-   <img class="active　photo" src="img/topimage1.jpg" alt="画像1">
-   <img class="photo" src="img/topimage2.jpg" alt="画像2">
-   <img class="photo" src="img/topimage3.jpeg" alt="画像3">
-   <img class="photo" src="img/topimage4.jpg" alt="画像4">
-   <img class="photo" src="img/topimage5.jpeg" alt="画像5">
+<div id="container">
+  <div id="theTarget">
+    <div style="background-image: url(img/topimage1.jpg)"></div>
+    <div style="background-image: url(img/topimage2.jpg)"></div>
+    <div style="background-image: url(img/topimage3.jpeg)"></div>
+    <div style="background-image: url(img/topimage4.jpg)"></div>
+    <div style="background-image: url(img/topimage5.jpeg)"></div>
+  </div>
 </div>
-	
+
 <div class="about-text">
-<h3>What's LOVES BREAD?</h3>
+<h1>What's LOVES BREAD?</h1>
 <div class="text">
 <br>
 <p>突然ですが、みなさん、パンはお好きですか？</p>
@@ -61,7 +65,7 @@
 <p>このサイトは、そんなわたしの子育てにも欠かせないおいしいパンを紹介するサイトです。</p>
 <p>本当は都内全域や旅先でのおすすめパン屋さんをご紹介したいのですが、今回は杉並区近郊のおすすめパン屋さん、</p>
 <p>他にはパンのおいしい食べ方、世界のパン、おまけにおいしい焼き菓子屋さんなどもおすすめしちゃいます。</p><br>
-<p class="enjoy">Let's Enjoy!</p><br>
+<h2 class="enjoy">Let's Enjoy!</h2><br>
 </div>
 </div>
 
@@ -88,44 +92,11 @@
 		<div class="footer">
 		<div class="footer-logo">&copy;2017 LOVES BREAD!</div>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script type="text/javascript">
-function slideSwitch() {
-   var $active = $('#slideshow img.active');
 
-   if ( $active.length == 0 ) $active = $('#slideshow img:last');
-
-   var $next =  $active.next().length ? $active.next()
-      : $('#slideshow img:first');
-
-   $active.addClass('last-active');
-
-   $next.css({opacity: 0.0})
-      .addClass('active')
-      .animate({opacity: 1.0}, 1000, function() {
-           $active.removeClass('active last-active');
-      });
-}
-
-$(function() {
-   setInterval( "slideSwitch()", 3000 );
-});
-	</script>
-<script>
-$(function(){
-      $('a[href^=\'#\'').click(function() {
-      var speed = 400; 
-      var href= $(this).attr("href");
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      var position = target.offset().top;
-     
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-   });
-});
-</script>
 </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/skippr.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
